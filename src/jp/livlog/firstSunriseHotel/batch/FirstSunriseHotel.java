@@ -128,7 +128,7 @@ public class FirstSunriseHotel {
     }
 
 
-    public void writeCSV(final List <FirstSunriseHotelCsv> beanList, final Class <FirstSunriseHotelCsv> bean, final String path) throws Exception {
+    private void writeCSV(final List <FirstSunriseHotelCsv> beanList, final Class <FirstSunriseHotelCsv> bean, final String path) throws Exception {
 
         final var file = new File(path);
         try (var csvWriter = new CSVWriter(new FileWriter(file))) {
